@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wKR-Rh-4Bd" userLabel="UserInfoContainer" customClass="ACCUserView">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="40"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM9-MC-XAr">
+                    <rect key="frame" x="44" y="14" width="83" height="12"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aof-eg-tqO">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9Ga-np-MlG"/>
+                        <constraint firstAttribute="width" constant="40" id="JNW-zL-6qT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sage444" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="GcH-2v-rSl">
+                    <rect key="frame" x="44" y="0.0" width="95" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.99714501710000003" green="1" blue="0.66873913360000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="aof-eg-tqO" firstAttribute="leading" secondItem="wKR-Rh-4Bd" secondAttribute="leading" id="MYe-m4-TJn"/>
+                <constraint firstAttribute="trailing" secondItem="YM9-MC-XAr" secondAttribute="trailing" constant="14" id="cz6-5P-4gf"/>
+                <constraint firstItem="YM9-MC-XAr" firstAttribute="leading" secondItem="aof-eg-tqO" secondAttribute="trailing" constant="4" id="e60-if-6x1"/>
+                <constraint firstItem="GcH-2v-rSl" firstAttribute="leading" secondItem="aof-eg-tqO" secondAttribute="trailing" constant="4" id="osY-NO-44A"/>
+                <constraint firstItem="GcH-2v-rSl" firstAttribute="top" secondItem="wKR-Rh-4Bd" secondAttribute="top" id="qAk-n0-Wwx"/>
+                <constraint firstItem="YM9-MC-XAr" firstAttribute="top" secondItem="GcH-2v-rSl" secondAttribute="bottom" id="qoh-Jn-hhk"/>
+                <constraint firstItem="aof-eg-tqO" firstAttribute="top" secondItem="wKR-Rh-4Bd" secondAttribute="top" id="vc8-uo-84O"/>
+                <constraint firstAttribute="trailing" secondItem="GcH-2v-rSl" secondAttribute="trailing" constant="2" id="xwH-tM-SM3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="aof-eg-tqO" id="f1k-SZ-jat"/>
+                <outlet property="scorePointsLabel" destination="YM9-MC-XAr" id="EYF-2K-csu"/>
+                <outlet property="userNameLabel" destination="GcH-2v-rSl" id="SQE-42-h8x"/>
+            </connections>
+            <point key="canvasLocation" x="416.5" y="207"/>
+        </view>
+    </objects>
+</document>
